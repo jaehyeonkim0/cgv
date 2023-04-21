@@ -13,9 +13,85 @@ header {
 	height:149px;
 }
 .header_menu {	
-	border:1px solid red;		
-	width:1000px; 
-	margin:auto;
+	border: 1px solid red;		
+	width: 1000px; height: 300px;
+	margin: auto;
+}
+
+.header_menu nav{
+	/* border: 1px solid blue; */	
+}
+
+.header_menu> nav.nav1 ul {
+	/* border: 3px solid black; */
+	padding-left: 450px;
+	padding-top: 8px;
+	height: 15px;
+}
+
+.header_menu> nav.nav1> ul> li {
+	float: left;
+	list-style-type: none;
+}
+
+.header_menu> nav.nav1> ul> li:last-child> a {
+	/*마지막 메뉴 | 없애기*/
+	border:none;
+	color: tomato;
+	font-weight: bold;
+}
+
+.header_menu> nav.nav1> ul> li:nth-child(4)> a {
+	width: 40px;
+}
+
+.header_menu> nav.nav1 ul> li> a {
+	/* border: 1px solid red; */
+	border-right: 1px solid gray; /*메뉴 창에 | 표시*/
+	display: block;
+	text-decoration: none;
+	color: gray;
+	font-family: "나눔고딕";
+	width: 70px;
+	font-size: 12px;
+	text-align: center;
+	font-weight: 500;
+}
+
+
+.header_menu> div> div> nav.nav2> ul> li {
+	/* border: 2px solid green; */
+	list-style-type: none;
+	float: left;
+	padding-left: 1px;
+	padding-top: 1px;
+}
+.header_menu> div> div> nav.nav2> ul> li> a {
+	text-decoration: none;
+	color: gray;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 15px;
+}
+.header_menu> div {
+	clear: both;
+	border: 2px solid black;
+	position: relative;
+}
+
+.header_menu> div> a {
+	/* border: 2px solid green; */
+	position: absolute;
+	left: 30px;
+	top: 30px;
+}
+
+.header_menu> div> div {
+	/* border: 2px solid green; */
+	position: absolute;
+	left: 350px;
+	top: 32px;
+	text-align: center;
 }
 
 /*****************************
