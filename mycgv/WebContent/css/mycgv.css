@@ -14,7 +14,7 @@ header {
 }
 .header_menu {	
 	border: 1px solid red;		
-	width: 1000px; height: 300px;
+	width: 1000px; height: 150px;
 	margin: auto;
 }
 
@@ -105,5 +105,7 @@ header {
 	border:1px solid blue;
 }
 
-
+iframe {
+	display: block;
+}
 
