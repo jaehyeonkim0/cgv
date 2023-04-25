@@ -5,6 +5,41 @@
 	padding:0px; margin:0px;
 }
 
+.header_menu, .section1_d1, .section2, .section3, .footer_menu
+, section.login, section.join, section.mypage, section.notice, section.board, section.admin {
+	width:1000px; margin:auto;
+	/* border: 1px solid blue; */
+}
+
+section.login form[name='loginForm'], section.join form[name='joinForm'], section.mypage> div,
+section.notice> table, section.board> table, section.admin> div {
+	width: 70%;
+	margin: auto;
+}
+
+.title { /*로그인,회원가입 등 페이지의 h1 스타일*/
+	border-left: 15px solid #333;
+	border-bottom: 1px solid #333;
+	width: 30%;
+	font-size: 25pt;
+	padding: 5px 0 10px 20px;
+	margin: 30px 0 30px 100px;
+	font-style: italic;
+}
+
+.btn_style { /*공통으로 들어갈 버튼 스타일*/
+	width: 130px;
+	padding: 10px 0;
+	background: tomato;
+	color: white;
+	font-weight: bold;
+	font-size: 10pt;
+	border: 1px solid white;
+	outline: 1px solid red;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
 /*****************************
 	Header style sheet
 ******************************/
@@ -12,10 +47,8 @@ header {
 	background-image:url("http://localhost:9000/mycgv/images/bg_header.gif");
 	height:149px;
 }
-.header_menu {	
-	border: 1px solid red;		
-	width: 1000px; height: 150px;
-	margin: auto;
+.header_menu {
+	height: 149px;
 }
 
 .header_menu nav{
@@ -75,7 +108,7 @@ header {
 }
 .header_menu> div {
 	clear: both;
-	border: 2px solid black;
+	/* border: 2px solid black; */
 	position: relative;
 }
 
@@ -90,9 +123,14 @@ header {
 	/* border: 2px solid green; */
 	position: absolute;
 	left: 350px;
-	top: 32px;
+	top: 34px;
 	text-align: center;
 }
+
+body> iframe:first-child {
+	display: block;
+}
+
 
 /*****************************
 	Index-Content style sheet
@@ -100,12 +138,324 @@ header {
 .section1 {
 	background-image:url("http://localhost:9000/mycgv/images/carousel_bg.png");
 }
-.section1_d1, .section2, .section3 {
-	width:1000px; margin:auto;
-	border:1px solid blue;
+
+.section1_d1> img {
+	width: 1000px;
 }
 
-iframe {
-	display: block;
+.section2 div:first-child, .section3> div:first-child {
+	padding: 15px 0px;
 }
+
+.section2 div:nth-child(2) {
+	/* display: inline-block; */
+	float: left;
+}
+.section2> img {
+	width: 283px;
+	height: 400px;
+	float: right;
+}
+
+.section3 {
+	clear: both;
+}
+
+.section3 div:nth-child(2) img:first-child,
+.section3 div:last-child img:first-child {
+	float: left;
+}
+
+.section3 div:nth-child(2) img:last-child,
+.section3 div:last-child img:last-child {
+	float: right;
+}
+
+.section3 div:nth-child(2) img:nth-child(2),
+.section3 div:nth-child(2) img:nth-child(3) {
+	margin: 0px 4px;	
+}
+
+.section3 div:nth-child(2) {
+	border-bottom: 3px solid gray;
+	padding-bottom: 15px;
+}
+
+.section3 div:last-child {
+	padding-top: 19px;
+}
+
+.section3 div:last-child img:first-child,
+.section3 div:last-child img:last-child {
+	border: 7px double black;
+	/* outline: 3px double black; */
+	
+}
+
+/******************************************
+	CSS - Footer stylesheet (Mine)
+
+
+.footer_bg {
+	background: rgb(255,219,153);
+	text-align: center;
+}
+
+.footer_bg> img {
+	width: 980px; height: 240px;
+	margin: auto;
+}
+
+
+.footer_menu> nav> ul {
+	list-style-type: none;
+	border: 2px solid blue;
+	height: 30px;
+	padding-left: 485px;
+}
+
+.footer_menu> nav> ul> li {
+	float: left;
+}
+
+.footer_menu> nav> ul> li:nth-child(6) {
+	color: black;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.footer_menu> nav> ul> li> a {
+	text-decoration: none;
+	color: gray;
+	font-size: 13px;
+	padding-right: 40px;
+	font-weight: bold;
+}
+
+
+footer> div:last-child {
+	clear: both;
+}
+
+*******************************************/
+
+
+
+/*******************************************
+	footer stylesheet teacher
+********************************************/
+
+.section1_d1, .section2, .section3 {
+	text-align: center;
+}
+
+.footer_bg {
+	text-align: center;
+	background: rgb(255,219,153);
+	margin-top: 80px;
+}
+
+.footer_bg> img {
+	width: 1000px;
+	margin-top: -58px;
+}
+
+.footer_menu ul{
+	list-style-type: none;
+	margin: 0px; padding: 0px;
+	overflow: hidden;
+	border-bottom: 1px solid lightgray;
+}
+
+.footer_menu ul> li {
+	float: left;
+}
+
+.footer_menu ul> li> a {
+	display: block;
+	text-decoration: none;
+	color: #777;
+	font-weight: 700;
+	padding: 30px 43px 30px 2px;
+	font-size: 11px;
+	text-align: center;
+}
+
+.footer_menu ul> li:last-child {
+	float: right;
+}
+
+.footer_menu ul> li:nth-child(6)> a{
+	text-decoration: underline;
+	color: #000;
+	font-weight: 700;
+}
+
+.footer_menu ul> li> a:hover {
+	text-decoration: underline;
+}
+	
+.footer_menu > div {
+	margin-top: 20px;
+}
+
+.footer_menu > div> p {
+	font-size: 13px;
+	color: #777;
+	padding: 3px 0px;
+}
+
+
+/***********************************************************************
+							loginForm stylesheet
+***********************************************************************/
+section.login form ul {
+	list-style-type: none;
+	padding: 0px; margin: 0px;
+	/* border: 1px solid red; */
+}
+section.login form ul li {
+	clear: left;
+}
+
+section.login form ul li> label{
+	display: inline-block;
+	width: 120px;
+	padding: 8px 0px;
+	text-align: center;
+	background: lightgray;
+	color: black;
+	font-size: 12pt;
+	font-weight: 500;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 130px;
+	border-radius: 3px;
+	float: left;
+}
+
+section.login form ul li> input {
+	width: 50%;
+	/* height: 35px; */
+	border-radius: 3px;
+	outline: none;
+	border: 1px solid lightgray;
+	padding: 10px;
+}
+
+section.login form ul li:nth-child(3) {
+	padding-left: 260px;
+	padding-bottom: 15px;
+}
+
+section.login form ul li:nth-child(3)> button:last-child {
+	margin-left: 5px;
+}
+
+section.login form ul li:last-child {
+	padding-left: 265px;
+	
+}
+
+section.login form ul li:last-child a {
+	text-decoration: none;
+	font-size: 10pt;
+	color: #555;
+	padding-right: 10px;
+}
+
+section.login form ul li:last-child a:hover {
+	text-decoration: underline;	
+}
+
+
+/***********************************************************************
+							joinForm stylesheet
+***********************************************************************/
+
+section.join form ul {
+	border: 1px solid red;
+	font-size: 10pt;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+section.join form ul li {
+	clear: left;
+}
+
+section.join form ul li> label{
+	display: inline-block;
+	width: 150px;
+	padding: 8px 0px;
+	text-align: center;
+	background: lightgray;
+	color: black;
+	font-size: 12pt;
+	font-weight: 500;
+	border-radius: 3px;
+	float: left;
+	
+	margin:0 8px 5px 0;
+}
+
+.input1 {
+	width: 40%;
+	padding: 10px 20px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+/*
+.email {
+	width: 20%;
+	padding: 10px 10px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+*/
+
+input[name='email1'], input[name='email2'] {
+	width: 20%;
+	padding: 10px 10px;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+}
+
+
+
+/**
+form : block level
+**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
