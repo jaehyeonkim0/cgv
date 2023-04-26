@@ -5,14 +5,26 @@
 	padding:0px; margin:0px;
 }
 
-.header_menu, .section1_d1, .section2, .section3, .footer_menu
-, section.login, section.join, section.mypage, section.notice, section.board, section.admin {
+.header_menu, 
+.section1_d1, 
+.section2, 
+.section3, 
+.footer_menu, 
+section.login, 
+section.join,
+section.mypage, 
+section.notice, 
+section.board, 
+section.admin {
 	width:1000px; margin:auto;
-	/* border: 1px solid blue; */
 }
 
-section.login form[name='loginForm'], section.join form[name='joinForm'], section.mypage> div,
-section.notice> table, section.board> table, section.admin> div {
+section.login form[name='loginForm'], 
+section.join form[name='joinForm'], 
+section.mypage div,
+section.notice table, 
+section.board table, 
+section.admin table {
 	width: 70%;
 	margin: auto;
 }
@@ -38,6 +50,19 @@ section.notice> table, section.board> table, section.admin> div {
 	outline: 1px solid red;
 	border-radius: 5px;
 	cursor: pointer;
+}
+
+.btn_style2 { /*회원가입-중복체크, 주소찾기 버튼 스타일*/
+	width: 80px;
+	padding: 8px 0;
+	background: mediumseagreen;
+	color: white;
+	font-weight: bold;
+	font-size: 10pt;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 5px;
 }
 
 /*****************************
@@ -192,60 +217,13 @@ body> iframe:first-child {
 	
 }
 
-/******************************************
-	CSS - Footer stylesheet (Mine)
-
-
-.footer_bg {
-	background: rgb(255,219,153);
-	text-align: center;
-}
-
-.footer_bg> img {
-	width: 980px; height: 240px;
-	margin: auto;
-}
-
-
-.footer_menu> nav> ul {
-	list-style-type: none;
-	border: 2px solid blue;
-	height: 30px;
-	padding-left: 485px;
-}
-
-.footer_menu> nav> ul> li {
-	float: left;
-}
-
-.footer_menu> nav> ul> li:nth-child(6) {
-	color: black;
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-.footer_menu> nav> ul> li> a {
-	text-decoration: none;
-	color: gray;
-	font-size: 13px;
-	padding-right: 40px;
-	font-weight: bold;
-}
-
-
-footer> div:last-child {
-	clear: both;
-}
-
-*******************************************/
-
-
-
 /*******************************************
-	footer stylesheet teacher
+	footer stylesheet
 ********************************************/
 
-.section1_d1, .section2, .section3 {
+.section1_d1,
+.section2,
+.section3 {
 	text-align: center;
 }
 
@@ -374,7 +352,7 @@ section.login form ul li:last-child a:hover {
 ***********************************************************************/
 
 section.join form ul {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 	font-size: 10pt;
 	list-style-type: none;
 	padding: 0px;
@@ -401,7 +379,7 @@ section.join form ul li> label{
 }
 
 .input1 {
-	width: 40%;
+	width: 41%;
 	padding: 10px 20px;
 	border: 1px solid #ddd;
 	border-radius: 3px;
@@ -415,17 +393,326 @@ section.join form ul li> label{
 }
 */
 
-input[name='email1'], input[name='email2'] {
+input[name='email1'],
+input[name='email2'] {
 	width: 20%;
 	padding: 10px 10px;
 	border: 1px solid #ddd;
 	border-radius: 3px;
 }
 
+input[name='email2'] {
+	width: 18%;
+}
+
+input[name='email2']+ select,
+select[name='phone1'] {
+	border: 1px solid #777;;
+	padding: 7px 2px;
+	font-size: 13px;
+	margin-left: 8px;
+	width: 80px;
+}
+
+input[name='phone2'],
+input[name='phone3'] {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 8px 4px;
+	width: 78px;
+	text-align: center;
+}
+
+textarea[name='intro'] {
+	border: 1px solid lightgray;
+	border-radius: 4px;
+	width: 56%;
+	height: 100px;
+	font-size: 12px;
+	padding: 8px 15px;
+}
+
+input[type='radio'] +span,
+input[type='radio'],
+input[type='checkbox'] +span,
+input[type='checkbox'] {
+	font-size: 9pt;
+	margin-left: 5px;
+	padding: 8px 4px;
+	vertical-align: middle;
+}
+
+form[name='joinForm'] ul li:last-child {
+	text-align: center;
+	padding: 10px 0;
+}
+form[name='joinForm'] ul li:last-child button:first-child {
+	margin-right: 5px;
+}
+
+/***********************************************************
+					mypage stylesheet
+***********************************************************/
+
+section.mypage div {
+	text-align: center;
+	height: 300px;
+	padding-top: 20px;
+}
+
+section.mypage article {
+	display: inline-block;
+	width: 200px;
+	padding: 30px 0;
+	text-align: center;
+	font-size: 10pt;
+	background: tomato;
+	color: white;
+	font-weight: 700;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+section.mypage article:first-child {
+	background: mediumseagreen;
+	margin-right: 10px;
+}
+
+/***********************************************************
+		공지사항(notice), 게시판(Board) commons stylesheet
+***********************************************************/
+
+section.notice table,
+section.notice th,
+section.notice td,
+section.board table,
+section.board th,
+section.board td {
+	border: 1px solid gray;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 10pt;
+}
+section.notice th,
+section.notice td,
+section.board th,
+section.board td{
+	padding: 6px 0;
+}
 
 
+section.notice table tr> td:nth-child(2), 
+section.board table tr> td:nth-child(2) {
+	/* border: 3px solid green; */
+	text-align: left;
+	text-indent: 20px;
+}
+
+section.notice table tr> td:nth-child(2) a, 
+section.board table tr> td:nth-child(2) a {
+	text-decoration: none;
+}
+
+section.notice table tr> td:nth-child(2) a:hover, 
+section.board table tr> td:nth-child(2) a:hover {
+	text-decoration: underline;
+}
+
+section.notice tr:first-child,
+section.board tr:nth-child(2) {
+	background: lightgray;
+	color: #333;
+}
+
+section.notice tr:last-child td,
+section.board tr:last-child td {
+	border-color: white;
+	padding-bottom: 20px;
+}
+
+/***********************************************************
+		공지사항(notice) stylesheet
+***********************************************************/
+
+section.notice table.notice_content th {
+	background: lightgray;
+	color: #333;
+	width: 140px;
+}
+
+section.notice table.notice_content tr:first-child td {
+	/* notice content에서 th에만 들어가야할 background가 첫번째 tr의 두번째 td에도 적용되어서 
+	background: white로 적용 */
+	background: white;
+}
+
+section.notice table.notice_content tr:nth-child(2) td {
+	/*공지사항 내용 부분 text-indent가 한 줄에만 적용되기 때문에
+	전체적으로 적용되는 text-indent 0px로 초기화하고 padding으로 띄어쓰기한다*/
+	text-indent: 0px;
+	padding-left: 20px;
+}
+
+section.notice table.notice_content tr:last-child td {
+	/*content notice 홈으로, 리스트 버튼 padding 조절*/
+	padding-top: 20px;
+}
+
+section.notice table.notice_content tr:last-child td button {
+	/**관리자 공지사항 content 버튼 크기 조정*/
+	width: 15%;
+}
+
+section.notice table.notice_content tr:last-child td button:first-child {
+	/**content notice 홈으로 버튼과 리스트 버튼 사이 margin 조절	*/
+	margin-right: 10px;
+}
+
+/***********************************************************
+		게시판(board) stylesheet
+***********************************************************/
+
+section.board table.board_list tr:first-child td {
+	/**board_list 글쓰기 버튼 있는 td border white로 없애고, border-bottom은 gray로 살리고
+	버튼 align으로 오른쪽 정렬, 밑 table과 padding 조절*/
+	border: 1px solid white;
+	border-bottom: 1px solid gray;
+	text-align: right;
+	padding-bottom: 5px;
+}
+
+section.board table.board_list tr:first-child td button {
+	font-size: 8pt;
+	width: 65px;
+	padding: 4px 0;
+}
+
+/**********************************************
+			board write form
+**********************************************/
+
+section.board form[name='writeForm'] table button,
+section.board table.board_content button,
+section.board form[name='updateForm'] table button,
+section.board form[name='deleteForm'] table button {
+	/**board_write의 button 조정
+	board_content button 조정
+	board_update button 조정*/
+	width: 100px;
+	margin: 30px 5px;
+	padding: 5px 0px;
+}
+
+section.board form[name='writeForm'] table th,
+section.board table.board_content th,
+section.board form[name='updateForm'] table th {
+	/**board_write의 th 부분에 background, color, width 조정
+	board_content의 th 조정
+	board_update th 조정*/
+	background: lightgray;
+	color: #333;
+	width: 140px;
+}
+
+section.board form[name='writeForm'] table tr:nth-child(2) td,
+section.board table.board_content tr:nth-child(2) td,
+section.board form[name='updateForm'] table tr:nth-child(2) td {
+	/* board_write, board_content,board_update 에서 th에만 들어가야할 background가 첫번째 tr의 두번째 td에도 적용되어서 
+	background: white로 적용 */
+	background: white;
+}
+
+section.board form[name='writeForm'] table input,
+section.board form[name='writeForm'] table textarea,
+section.board form[name='updateForm'] table input,
+section.board form[name='updateForm'] table textarea {
+	/**board_write,board_update의 input, textarea 조정*/
+	width: 80%;
+	padding: 6px 10px;
+	border: 1px solid lightgray;
+	border-radius: 4px;
+}
+
+section.board form[name='writeForm'] table,
+section.board form[name='updateForm'] table,
+section.board table.board_content {
+	/**board_write,board_update의 table 크기 조정*/
+	width: 60%;
+}
+
+section.board form[name='writeForm'] table textarea,
+section.board form[name='updateForm'] table textarea {
+	/**board_write, board_update textarea 높이 조정*/
+	height: 120px;
+}
+
+/* section.board form[name='writeForm'] table tr input[name='id'] {
+	board_write input창 중 작성자 input background 조정; 
+	혹은 input창 안에 disabled 작성
+	
+	background: lightgray;
+}*/
+
+/**********************************************
+			board deleteform
+**********************************************/
+
+section.board form[name='deleteForm'] img {
+	width: 30%;
+}
+
+section.board form[name='deleteForm'] table td {
+	border: 1px solid white;
+	background: white;
+	font-size: 10pt;
+}
+
+
+/***************************************************************
+						admin style sheet
+****************************************************************/
+
+section.admin div {
+	text-align: center;
+	height: 300px;
+	padding-top: 20px;
+}
+
+section.admin article {
+	display: inline-block;
+	width: 200px;
+	padding: 10px;
+	text-align: center;
+	font-size: 10pt;
+	background: lightgray;
+	color: black;
+	font-weight: 700;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+section.admin article a {
+	text-decoration: none;
+	color: black;
+}
+
+section.admin article a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+		
 /**
 form : block level
+width가 정해진 상태에서 padding 주면 크기 증가; width조정
+inline= text-align
+block = margin
 **/
 
 
