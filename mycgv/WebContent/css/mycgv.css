@@ -450,6 +450,11 @@ form[name='joinForm'] ul li:last-child button:first-child {
 	margin-right: 5px;
 }
 
+#cmsg {
+	display: none;
+	margin-left: 160px;
+}
+
 /***********************************************************
 					mypage stylesheet
 ***********************************************************/
