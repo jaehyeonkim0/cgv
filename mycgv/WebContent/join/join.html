@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <title>MY CGV</title>
 <link rel="stylesheet" href="http://localhost:9000/mycgv/css/mycgv.css">
-<script src="http://localhost:9000/mycgv/js/cmjcgv_javascript.js"></script>
+<script src="../js/jquery-3.6.4.min.js"></script>
+<script src="http://localhost:9000/mycgv/js/cmjcgv_jquery.js"></script>
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
 <body>
@@ -30,8 +31,8 @@
 					</li>
 					<li>
 						<label>비밀번호 확인</label>
-						<input type="password" name="cpwd" class="input1" id="cpwd" onblur="passCheck()">
-						<span id="cmsg">test</span>
+						<input type="password" name="cpwd" class="input1" id="cpwd">
+						<span id="cmsg"></span>
 					</li>
 					<li>
 						<label>성명</label>
@@ -39,7 +40,7 @@
 					</li>
 					<li>
 						<label>성별</label>
-						<input type="radio" name="gender" value="M"><span>남자</span>
+						<input type="radio" name="gender" value="M"><span id="male">남자</span>
 						<input type="radio" name="gender" value="F"><span>여자</span>
 					</li>
 					<li>
@@ -47,7 +48,7 @@
 						<input type="text" name="email1" id="email1">
 						@
 						<input type="text" name="email2" id="email2">
-						<select id="email3" onchange="emailCheck()">
+						<select id="email3">
 							<option value="default">선택</option>
 							<option value="naver.com">네이버</option>
 							<option value="gmail.com">지메일</option>
@@ -58,7 +59,7 @@
 					<li>
 						<label>주소</label>
 						<input type="text" name="addr1" class="input1" id="addr1">
-						<button type="button" class="btn_style2" onclick="searchAddr()">주소찾기</button>
+						<button type="button" class="btn_style2" id="btnSearchAddr">주소찾기</button>
 					</li>
 					<li>
 						<label>상세주소</label>
@@ -92,8 +93,8 @@
 						<textarea name="intro" placeholder="*200자 이내로 작성해주세요"></textarea>
 					</li>
 					<li>
-						<button type="button" class="btn_style" onclick="joinCheck()">가입하기</button>
-						<button type="reset" class="btn_style">다시입력</button>
+						<button type="button" class="btn_style" id="btnJoin">가입하기</button>
+						<button type="reset" class="btn_style" id="btnJoinReset">다시입력</button>
 					</li>
 				</ul>
 			</form>
